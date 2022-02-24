@@ -1,0 +1,84 @@
+*  Generated for: PrimeSim
+*  Design library name: la_vco1
+*  Design cell name: VCO_stm
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Thu Feb 24 11:34:44 2022
+
+.global gnd!
+********************************************************************************
+* Library          : la_vco1
+* Cell             : VCO
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt vco gnd_1 in vdd out
+r0 vdd net3 r=1k
+xm11 net58 out net43 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm10 out net70 net39 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm9 net70 net66 net35 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm8 net66 net62 net31 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm7 net62 net58 net27 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm6 net39 net47 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 net35 net47 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net31 net47 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net27 net47 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net43 net47 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net47 net47 net3 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm22 net87 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm21 net83 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm20 net79 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm19 net75 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm18 net71 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm17 out net70 net87 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm16 net70 net66 net83 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm15 net66 net62 net79 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm14 net62 net58 net75 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm13 net58 out net71 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm12 net47 in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+.ends vco
+
+********************************************************************************
+* Library          : la_vco1
+* Cell             : VCO_stm
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 gnd! input net7 output vco
+v1 input gnd! dc=0 sin ( 0 1 8G 0 0 0 )
+v2 net7 gnd! dc=1.8
+c8 output gnd! c=0.01p
+
+
+
+
+
+
+
+
+.tran '1n' '10n' name=tran
+.ac dec '10' '100k' '100G' name=ac
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(input) v(output)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end

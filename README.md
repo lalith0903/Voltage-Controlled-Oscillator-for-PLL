@@ -118,3 +118,12 @@ Refer to the netlist of the Voltage-Controlled-Oscillator for PLL here: [Netlist
 1.	Sandhiya.S, Revathi.S, Dr.B.Vinothkumar -  Design of Voltage Controlled Oscillator in 180 nm CMOS Technology Published by International Research Journal of Engineering and Technology (IRJET).
 2.	Aswin Udayan Candice Darvin Fyna Francis Godwin Varghese - Design Of Digital Phase Locked Loop in 90nm CMOS Technology Published by Federal Institute of Science And Technology (FISAT). 
 3.	Kuo-Hsing Cheng', Shu-Chang Kuo2, Chia-Ming Tu3 – A LOW NOISE, 2.0 GHz CMOS VCO DESIGN Published by IEEE Publication.
+
+## Author
+
+Balla Lalith Kumar, 
+Gayatri Vidya Parishad College for Degree and PG Courses(A), 
+Visakhapatnam-530045,
+Andhra Pradesh.
+
+E-MAIL_ID - lalithkumar97041@gmail.com

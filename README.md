@@ -4,14 +4,14 @@ This is repository presents the design of Voltage Controlled Oscillator for PLL 
 
 ## Table Of Content:
 
-Introduction
-- [Tools Used]()
-- [Pre-Layout of Schematic of VCO]()
-- [Stimulation]()
-- [Netlist]()
-- [Acknowledgement]()
-- [References]()
-- [Author]()
+- [Introduction](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#introduction)
+- [Tools Used](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#toolsused)
+- [Pre-Layout of Schematic of VCO](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#introduction)
+- [Stimulation](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#stimulation)
+- [Netlist](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#Netlist)
+- [Acknowledgement](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#Acknowledgement)
+- [References](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#References)
+- [Author](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#Author)
 
 ## Introduction:
 
@@ -25,7 +25,8 @@ A voltage-controlled oscillator or VCO is an electronic oscillator designed for 
  
 A ring oscillator is comprised of a number of delay stages, with the output of the last stage fed back to the input of the first. This current starved VCO is designed using ring oscillator and its operation is also similar to that. From the schematic circuit it was observed that MOSFETs M1 and M2 operate as an inverter, while MOSFETs M13 and M14 operate as current sources. The current sources, M13 and M14, limit the current available to the inverter M1 and M2. In other words, the inverter is starved for the current. The MOSFETs M11 and M12 drain currents are the same and are set by input control voltage. The currents in M11 and M12 are mirrored in each inverter/current source stage. The upper PMOS transistors are connected to the gate of M11 and source voltage is applied to the gates of all low NMOS Transistors. The bias circuit is used to provide correct polarization for transistor M13 and M14. The benefit of this configuration is that the oscillation frequency can be tuned for a wide range by changing the value of control voltage.
 
- ![VCO design](https://user-images.githubusercontent.com/76272359/155745649-816a43fa-8717-4313-be3b-4e6a99fa5b5e.PNG) CSVCO Circuit
+ ![VCO design](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/Images/VCO%20design.PNG) 
+ CSVCO Circuit
 
 The oscillation frequency of the current-starved VCO for N of stages is given by
 '''
@@ -77,8 +78,9 @@ N is the Number of Stages
 ## Pre-Layout Schematics of VCO:
 
 Initially Schematic of the VCO was implemented and converted into symbol so that it will be easier for stimulation process which is later used for PLL. 
-![Schematic of VCO]()
-![Symbol of VCO]()
+![Schematic of VCO](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/Images/Schematic%20of%20VCO.png) Schematic of VCO
+
+![Symbol of VCO](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/Images/Symbol%20of%20VCO.png) Symbol of VCO
 
 ## Stimulations:
 
@@ -86,22 +88,24 @@ Initially Schematic of the VCO was implemented and converted into symbol so that
 
 For getting transient stimulation, create and save the schematic. Then click on ‘Tools’ and select on ‘Prime wave’, a new Testbench window will be open for stimulation. In this testbench, select ‘model file’ and browse for 28nm PDK’s.lib which is present in HSPICE folder. After doing this process, click on ‘Analysis’ an analysis window will be open. Select the ‘Tran’ in the window and give ‘Start’, ‘Stop’ and ‘Step Size’ and save it. Later select the nets in the schematic for which waveform is to be observed. Save the testbench and get the waveform i.e., select on ‘Stimulation’ and click on ‘Netlist and Run’. Also, we get the netlist for the circuit below.
 
-![Stumulation of VCO]()
+![Stimulation of VCO](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/Images/Wavefrom%20of%20VCO.png)
 
 ## Netlists:
 
-Refer to the netlist of the Voltage-Controlled-Oscillator for PLL here: [Netlist]()
+Refer to the netlist of the Voltage-Controlled-Oscillator for PLL here: [Netlist](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/VCO_for_PLL.cir.out)
 
 ## Acknowledgements:
-•	[Cloud Based Analog IC Design Hackathon]( https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon
 
-•	[Synopsys India]( https://www.synopsys.com/)
+•	[Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon)
 
-•	[Kunal Ghosh, Co-founder]( https://in.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836), [VLSI System Design (VSD) Corp. Pvt. Ltd India]( https://www.vlsisystemdesign.com/basic_courses/)
+•	[Synopsys India](https://www.synopsys.com/)
+
+•	[Kunal Ghosh, Co-founder](https://in.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836), [VLSI System Design (VSD) Corp. Pvt. Ltd India](https://www.vlsisystemdesign.com/basic_courses/)
 
 •	[Chinmay Panda, IIT Hyderabad](https://www.researchgate.net/profile/Chinmaya-Panda-6)
 
 ## References:
+
 1.	Sandhiya.S, Revathi.S, Dr.B.Vinothkumar -  Design of Voltage Controlled Oscillator in 180 nm CMOS Technology Published by International Research Journal of Engineering and Technology (IRJET).
 2.	Aswin Udayan Candice Darvin Fyna Francis Godwin Varghese - Design Of Digital Phase Locked Loop in 90nm CMOS Technology Published by Federal Institute of Science And Technology (FISAT). 
 3.	Kuo-Hsing Cheng', Shu-Chang Kuo2, Chia-Ming Tu3 – A LOW NOISE, 2.0 GHz CMOS VCO DESIGN Published by IEEE Publication.

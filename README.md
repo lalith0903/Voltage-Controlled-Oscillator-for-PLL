@@ -7,9 +7,9 @@ This is repository presents the design of Voltage Controlled Oscillator for PLL 
 - [Introduction](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#introduction)
 - [Tools Used](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#tools-used)
 - [Pre-Layout of Schematic of VCO](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#pre-layout-schematics-of-vco)
-- [Stimulation](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#stimulation)
-- [Netlist](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#netlist)
-- [Acknowledgement](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#acknowledgement)
+- [Stimulations](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#stimulations)
+- [Netlists](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#netlists)
+- [Acknowledgements](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#acknowledgements)
 - [References](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#references)
 - [Author](https://github.com/lalith0903/Voltage-Controlled-Oscillator-for-PLL/blob/main/README.md#author)
 
